@@ -1,0 +1,254 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* outline: 1px solid rgb(204, 37, 37); */
+    }
+    
+     :root {
+        --colorTextos: #7e7e7e;
+        --colorBotones: #7DAEDD;
+        /* 195EA0 */
+        --colorFondo: #195EA0;
+        --paddingSecciones: 60px 0;
+        --marginElementos: 40px;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .contenedor {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        overflow: hidden;
+        padding: var(--paddingSecciones);
+    }
+    /*! Menu */
+    
+    .menu-navegacion {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+    }
+    
+    .logo {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo img {
+        height: 100%;
+        display: block;
+    }
+    
+    .enlaces {
+        display: flex;
+        list-style: none;
+    }
+    
+    .enlaces a {
+        color: #3776B2;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    
+    .enlaces a:hover {
+        color: #195EA0;
+        text-decoration: underline;
+    }
+    /*!Hero */
+    
+    .hero {
+        height: 500px;
+        background: #457fca;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, hsla(209, 51%, 56%, 0.726), hsla(214, 56%, 53%, 0.863)), url('../img/house.jpg');
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(209, 51%, 56%, 0.726), hsla(214, 56%, 53%, 0.863)), url('../img/house.jpg');
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .contenedor-textos {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    
+    .hero p {
+        font-weight: 300;
+        font-size: 25px;
+        margin: 15px 0;
+    }
+    
+    .boton {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0;
+        background: var(--colorBotones);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    
+    .boton:hover {
+        background: hsla(214, 56%, 53%, 0.781);
+    }
+    /*! Main  */
+    
+    .titlo-seccion {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--colorFondo);
+    }
+    
+    .copy {
+        text-align: center;
+        color: var(--colorTextos);
+        margin: 20px 0;
+    }
+    
+    .beneficios {
+        padding-top: var(--marginElementos);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .beneficio {
+        font-size: 20px;
+        width: 10em;
+        height: 10em;
+        background: #457fca;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, hsla(209, 51%, 56%, 0.726), hsla(214, 56%, 53%, 0.863)), url('../img/room.jpg');
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(209, 51%, 56%, 0.726), hsla(214, 56%, 53%, 0.863)), url('../img/room.jpg');
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    .projects {
+        background: #f2f2f2;
+    }
+    
+    .contenedor-imagenes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .contenedor-imagenes img {
+        display: block;
+        object-fit: cover;
+        width: 30%;
+        height: 220px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: var(--marginElementos);
+    }
+    
+    .people {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .person {
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    footer {
+        background: #195EA0;
+        color: #fff;
+    }
+    
+    .fpadre {
+        display: flex;
+        padding: 20px 0;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    
+    .sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sociales .fab {
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        transition: .3s ease;
+    }
+    
+    .sociales .fab:hover {
+        opacity: .5;
+    }
+    
+    @media screen and (max-width:800px) {
+        header .menu-navegacion {
+            flex-direction: column;
+            height: 120px;
+            justify-content: space-evenly;
+        }
+        .logo img {
+            height: 60%;
+        }
+        .hero h1 {
+            font-size: 38px;
+        }
+        .beneficio {
+            margin-bottom: var(--marginElementos);
+        }
+        .contenedor-imagenes img {
+            width: 90%;
+        }
+        .sociales {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .sociales .fab {
+            margin-top: 10px;
+        }
+    }
