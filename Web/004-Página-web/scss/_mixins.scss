@@ -1,0 +1,62 @@
+@mixin boton($color) {
+    background-color: $color;
+    color: $blanco;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-top: .8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin background-image($imagen) {
+    background-image: url($imagen);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin gradiente($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
+
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
+/* Menus de navegacion */
+
+
+/* @mixin menus() {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: 1;
+    @include desktop() {
+        flex: 0 1 calc(30% - 1rem);
+    }
+    a {
+        color: $negro;
+        text-decoration: none;
+        margin-bottom: .5rem;
+    }
+} */
