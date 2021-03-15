@@ -114,6 +114,7 @@ body {
     text-align: center;
     color: #2a2f2d;
     font-weight: 900;
+    transform: scaleX(0);
     transition: .5s;
 }
 
